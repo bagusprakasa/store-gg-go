@@ -22,5 +22,12 @@ func main() {
 	r.PUT("/category/:id", controllers.CategoryUpdate)
 	r.DELETE("/category/:id", controllers.CategoryDestroy)
 
+	// Nominal
+	r.GET("/nominal", controllers.NominalIndex)
+	r.POST("/nominal", controllers.NominalStore)
+	r.GET("/nominal/:id", controllers.NominalShow)
+	r.PUT("/nominal/:id", controllers.NominalUpdate)
+	r.DELETE("/nominal/:id", controllers.NominalDestroy)
+
 	r.Run()
 }
