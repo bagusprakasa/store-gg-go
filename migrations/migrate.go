@@ -12,4 +12,5 @@ func init() {
 
 func main() {
 	helpers.DB.AutoMigrate(&models.Category{})
+	helpers.DB.AutoMigrate(&models.Nominal{})
 }
